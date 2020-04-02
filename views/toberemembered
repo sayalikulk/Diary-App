@@ -1,0 +1,9 @@
+ <div class="container">
+            <% for(var i=0; i < obj.length; i++) { %>
+               <form>
+                 <div class="date"><%= obj[i].date %></div>
+                 <textarea style="height: 400px;" type="email" class="form-control" name="message" id="email" aria-describedby="emailHelp" placeholder="Enter your log"><%= obj[i].message %></textarea>
+                 <button type="submit" class="btn btn-primary">Save</button>
+               </form>
+            <% } %>
+        </div>
